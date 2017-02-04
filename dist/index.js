@@ -5,7 +5,8 @@ export var WebUtilsModule = (function () {
     }
     WebUtilsModule.decorators = [
         { type: NgModule, args: [{
-                    imports: [CssModule]
+                    imports: [CssModule],
+                    exports: [CssModule]
                 },] },
     ];
     /** @nocollapse */
