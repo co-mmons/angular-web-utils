@@ -1,0 +1,30 @@
+{
+  "name": "@co.mmons/angular-web-utils",
+  "version": "1.0.0",
+  "author": "co.mmons",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "build": "ngc",
+    "install": "node-utils-npm-install-dist"
+  },
+  "dependencies": {
+    "@co.mmons/node-utils": "git://github.com/co-mmons/node-utils.git",
+    "@co.mmons/typescript-utils": "git://github.com/co-mmons/typescript-utils.git"
+  },
+  "peerDependencies": {
+    "@angular/common": "2.2.1",
+    "@angular/compiler": "2.2.1",
+    "@angular/compiler-cli": "2.2.1",
+    "@angular/core": "2.2.1",
+    "@angular/http": "2.2.1",
+    "@angular/platform-browser": "2.2.1",
+    "@angular/platform-browser-dynamic": "2.2.1",
+    "@angular/platform-server": "2.2.1",
+    "rxjs": "^5.0.0-beta.12",
+    "zone.js": "^0.6.26"
+  },
+  "devDependencies": {
+    "typescript": "2.0.10"
+  }
+}
