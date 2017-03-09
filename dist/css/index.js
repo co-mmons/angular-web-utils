@@ -11,7 +11,7 @@ export var CssModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    CssModule.ctorParameters = [];
+    CssModule.ctorParameters = function () { return []; };
     return CssModule;
 }());
 //# sourceMappingURL=index.js.map

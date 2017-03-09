@@ -10,7 +10,7 @@ export var WebUtilsModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    WebUtilsModule.ctorParameters = [];
+    WebUtilsModule.ctorParameters = function () { return []; };
     return WebUtilsModule;
 }());
 //# sourceMappingURL=index.js.map

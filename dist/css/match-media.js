@@ -22,7 +22,7 @@ export var CssMatchMedia = (function () {
                 },] },
     ];
     /** @nocollapse */
-    CssMatchMedia.ctorParameters = [];
+    CssMatchMedia.ctorParameters = function () { return []; };
     return CssMatchMedia;
 }());
 //# sourceMappingURL=match-media.js.map
