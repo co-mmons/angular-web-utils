@@ -13,18 +13,18 @@
     "@co.mmons/typescript-utils": "git://github.com/co-mmons/typescript-utils.git"
   },
   "peerDependencies": {
-    "@angular/common": "2.4.8",
-    "@angular/compiler": "2.4.8",
-    "@angular/compiler-cli": "2.4.8",
-    "@angular/core": "2.4.8",
-    "@angular/http": "2.4.8",
-    "@angular/platform-browser": "2.4.8",
-    "@angular/platform-browser-dynamic": "2.4.8",
-    "@angular/platform-server": "2.4.8",
-    "rxjs": "5.0.1",
-    "zone.js": "0.7.2"
+    "@angular/common": "^4.0.1",
+    "@angular/compiler": "^4.0.1",
+    "@angular/compiler-cli": "^4.0.1",
+    "@angular/core": "^4.0.1",
+    "@angular/http": "^4.0.1",
+    "@angular/platform-browser": "^4.0.1",
+    "@angular/platform-browser-dynamic": "^4.0.1",
+    "@angular/platform-server": "^4.0.1",
+    "rxjs": "^5.3.0",
+    "zone.js": "^0.8.5"
   },
   "devDependencies": {
-    "typescript": "2.0.10"
+    "typescript": "^2.2.2"
   }
 }
