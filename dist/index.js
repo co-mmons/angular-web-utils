@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 import { CssModule } from "./css";
-export var WebUtilsModule = (function () {
+var WebUtilsModule = (function () {
     function WebUtilsModule() {
     }
     WebUtilsModule.decorators = [
@@ -13,4 +13,5 @@ export var WebUtilsModule = (function () {
     WebUtilsModule.ctorParameters = function () { return []; };
     return WebUtilsModule;
 }());
+export { WebUtilsModule };
 //# sourceMappingURL=index.js.map
