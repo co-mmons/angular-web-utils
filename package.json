@@ -9,18 +9,8 @@
     "install": "node-utils-npm-install-dist"
   },
   "dependencies": {
-    "@angular/common": "^4.3.0",
-    "@angular/compiler": "^4.3.0",
-    "@angular/compiler-cli": "^4.3.0",
-    "@angular/core": "^4.3.0",
-    "@angular/http": "^4.3.0",
-    "@angular/platform-browser": "^4.3.0",
-    "@angular/platform-browser-dynamic": "^4.3.0",
-    "@angular/platform-server": "^4.3.0",
-    "@co.mmons/js-utils": "git://github.com/co-mmons/js-utils.git",
-    "@co.mmons/node-utils": "git://github.com/co-mmons/node-utils.git",
-    "rxjs": "^5.4.2",
-    "zone.js": "^0.8.13"
+    "@co.mmons/js-utils": "git+https://github.com/co-mmons/js-utils.git",
+    "@co.mmons/node-utils": "git+https://github.com/co-mmons/node-utils.git"
   },
   "peerDependencies": {
     "@angular/common": "^4.3.0",
