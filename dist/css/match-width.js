@@ -8,6 +8,15 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 import { Pipe, Directive, TemplateRef, ViewContainerRef, Input } from "@angular/core";
 import { ScreenSizeMinWidth } from "./screen-size";
 import { CssMatchMediaPipe } from "./match-media";
@@ -33,6 +42,12 @@ var CssMatchWidthGreaterPipe = /** @class */ (function (_super) {
     CssMatchWidthGreaterPipe.prototype.prepareQuery = function (query) {
         return buildMediaQuery("gte", query);
     };
+    CssMatchWidthGreaterPipe = __decorate([
+        Pipe({
+            name: "cssMatchGreaterWidth",
+            pure: false
+        })
+    ], CssMatchWidthGreaterPipe);
     return CssMatchWidthGreaterPipe;
 }(CssMatchMediaPipe));
 export { CssMatchWidthGreaterPipe };
@@ -44,6 +59,12 @@ var CssMatchLesserWidthPipe = /** @class */ (function (_super) {
     CssMatchLesserWidthPipe.prototype.prepareQuery = function (query) {
         return buildMediaQuery("lte", query);
     };
+    CssMatchLesserWidthPipe = __decorate([
+        Pipe({
+            name: "cssMatchLesserWidth",
+            pure: false
+        })
+    ], CssMatchLesserWidthPipe);
     return CssMatchLesserWidthPipe;
 }(CssMatchMediaPipe));
 export { CssMatchLesserWidthPipe };
@@ -65,6 +86,17 @@ var CssIfMatchGreaterWidthDirective = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
+    __decorate([
+        Input("cssIfMatchGreaterWidth"),
+        __metadata("design:type", String),
+        __metadata("design:paramtypes", [String])
+    ], CssIfMatchGreaterWidthDirective.prototype, "cssIfMatchGreaterWidth", null);
+    CssIfMatchGreaterWidthDirective = __decorate([
+        Directive({
+            selector: "[cssIfMatchGreaterWidth]"
+        }),
+        __metadata("design:paramtypes", [TemplateRef, ViewContainerRef])
+    ], CssIfMatchGreaterWidthDirective);
     return CssIfMatchGreaterWidthDirective;
 }());
 export { CssIfMatchGreaterWidthDirective };
@@ -86,6 +118,17 @@ var CssIfMatchLesserWidthDirective = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
+    __decorate([
+        Input(),
+        __metadata("design:type", String),
+        __metadata("design:paramtypes", [String])
+    ], CssIfMatchLesserWidthDirective.prototype, "cssIfMatchLesserWidth", null);
+    CssIfMatchLesserWidthDirective = __decorate([
+        Directive({
+            selector: "[cssIfMatchLesserWidth]"
+        }),
+        __metadata("design:paramtypes", [TemplateRef, ViewContainerRef])
+    ], CssIfMatchLesserWidthDirective);
     return CssIfMatchLesserWidthDirective;
 }());
 export { CssIfMatchLesserWidthDirective };
