@@ -1,16 +1,8 @@
 import { NgModule } from "@angular/core";
 import { CssModule } from "./css";
-var WebUtilsModule = (function () {
+var WebUtilsModule = /** @class */ (function () {
     function WebUtilsModule() {
     }
-    WebUtilsModule.decorators = [
-        { type: NgModule, args: [{
-                    imports: [CssModule],
-                    exports: [CssModule]
-                },] },
-    ];
-    /** @nocollapse */
-    WebUtilsModule.ctorParameters = function () { return []; };
     return WebUtilsModule;
 }());
 export { WebUtilsModule };

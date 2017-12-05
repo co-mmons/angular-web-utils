@@ -25,7 +25,7 @@ function buildMediaQuery(comparison, input) {
     }
     return "(" + (comparison == "gte" ? "min-width" : "max-width") + ": " + size + "px)";
 }
-var CssMatchWidthGreaterPipe = (function (_super) {
+var CssMatchWidthGreaterPipe = /** @class */ (function (_super) {
     __extends(CssMatchWidthGreaterPipe, _super);
     function CssMatchWidthGreaterPipe() {
         return _super !== null && _super.apply(this, arguments) || this;
@@ -33,18 +33,10 @@ var CssMatchWidthGreaterPipe = (function (_super) {
     CssMatchWidthGreaterPipe.prototype.prepareQuery = function (query) {
         return buildMediaQuery("gte", query);
     };
-    CssMatchWidthGreaterPipe.decorators = [
-        { type: Pipe, args: [{
-                    name: "cssMatchGreaterWidth",
-                    pure: false
-                },] },
-    ];
-    /** @nocollapse */
-    CssMatchWidthGreaterPipe.ctorParameters = function () { return []; };
     return CssMatchWidthGreaterPipe;
 }(CssMatchMediaPipe));
 export { CssMatchWidthGreaterPipe };
-var CssMatchLesserWidthPipe = (function (_super) {
+var CssMatchLesserWidthPipe = /** @class */ (function (_super) {
     __extends(CssMatchLesserWidthPipe, _super);
     function CssMatchLesserWidthPipe() {
         return _super !== null && _super.apply(this, arguments) || this;
@@ -52,18 +44,10 @@ var CssMatchLesserWidthPipe = (function (_super) {
     CssMatchLesserWidthPipe.prototype.prepareQuery = function (query) {
         return buildMediaQuery("lte", query);
     };
-    CssMatchLesserWidthPipe.decorators = [
-        { type: Pipe, args: [{
-                    name: "cssMatchLesserWidth",
-                    pure: false
-                },] },
-    ];
-    /** @nocollapse */
-    CssMatchLesserWidthPipe.ctorParameters = function () { return []; };
     return CssMatchLesserWidthPipe;
 }(CssMatchMediaPipe));
 export { CssMatchLesserWidthPipe };
-var CssIfMatchGreaterWidthDirective = (function () {
+var CssIfMatchGreaterWidthDirective = /** @class */ (function () {
     function CssIfMatchGreaterWidthDirective(template, viewContainer) {
         this.template = template;
         this.viewContainer = viewContainer;
@@ -81,23 +65,10 @@ var CssIfMatchGreaterWidthDirective = (function () {
         enumerable: true,
         configurable: true
     });
-    CssIfMatchGreaterWidthDirective.decorators = [
-        { type: Directive, args: [{
-                    selector: "[cssIfMatchGreaterWidth]"
-                },] },
-    ];
-    /** @nocollapse */
-    CssIfMatchGreaterWidthDirective.ctorParameters = function () { return [
-        { type: TemplateRef, },
-        { type: ViewContainerRef, },
-    ]; };
-    CssIfMatchGreaterWidthDirective.propDecorators = {
-        'cssIfMatchGreaterWidth': [{ type: Input, args: ["cssIfMatchGreaterWidth",] },],
-    };
     return CssIfMatchGreaterWidthDirective;
 }());
 export { CssIfMatchGreaterWidthDirective };
-var CssIfMatchLesserWidthDirective = (function () {
+var CssIfMatchLesserWidthDirective = /** @class */ (function () {
     function CssIfMatchLesserWidthDirective(template, viewContainer) {
         this.template = template;
         this.viewContainer = viewContainer;
@@ -115,19 +86,6 @@ var CssIfMatchLesserWidthDirective = (function () {
         enumerable: true,
         configurable: true
     });
-    CssIfMatchLesserWidthDirective.decorators = [
-        { type: Directive, args: [{
-                    selector: "[cssIfMatchLesserWidth]"
-                },] },
-    ];
-    /** @nocollapse */
-    CssIfMatchLesserWidthDirective.ctorParameters = function () { return [
-        { type: TemplateRef, },
-        { type: ViewContainerRef, },
-    ]; };
-    CssIfMatchLesserWidthDirective.propDecorators = {
-        'cssIfMatchLesserWidth': [{ type: Input },],
-    };
     return CssIfMatchLesserWidthDirective;
 }());
 export { CssIfMatchLesserWidthDirective };

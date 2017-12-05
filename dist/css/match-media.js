@@ -1,5 +1,5 @@
 import { Pipe, Directive, TemplateRef, ViewContainerRef, Input } from "@angular/core";
-var CssMatchMediaPipe = (function () {
+var CssMatchMediaPipe = /** @class */ (function () {
     function CssMatchMediaPipe() {
     }
     CssMatchMediaPipe.prototype.transform = function (query) {
@@ -18,18 +18,10 @@ var CssMatchMediaPipe = (function () {
     CssMatchMediaPipe.prototype.ngOnDestroy = function () {
         this.destroy;
     };
-    CssMatchMediaPipe.decorators = [
-        { type: Pipe, args: [{
-                    name: "cssMatchMedia",
-                    pure: false
-                },] },
-    ];
-    /** @nocollapse */
-    CssMatchMediaPipe.ctorParameters = function () { return []; };
     return CssMatchMediaPipe;
 }());
 export { CssMatchMediaPipe };
-var CssIfMatchMediaDirective = (function () {
+var CssIfMatchMediaDirective = /** @class */ (function () {
     function CssIfMatchMediaDirective(template, viewContainer) {
         this.template = template;
         this.viewContainer = viewContainer;
@@ -47,19 +39,6 @@ var CssIfMatchMediaDirective = (function () {
         enumerable: true,
         configurable: true
     });
-    CssIfMatchMediaDirective.decorators = [
-        { type: Directive, args: [{
-                    selector: "[cssIfMatchMedia]"
-                },] },
-    ];
-    /** @nocollapse */
-    CssIfMatchMediaDirective.ctorParameters = function () { return [
-        { type: TemplateRef, },
-        { type: ViewContainerRef, },
-    ]; };
-    CssIfMatchMediaDirective.propDecorators = {
-        'cssIfMatchMedia': [{ type: Input },],
-    };
     return CssIfMatchMediaDirective;
 }());
 export { CssIfMatchMediaDirective };
