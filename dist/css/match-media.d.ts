@@ -4,7 +4,7 @@ export declare class CssMatchMediaPipe implements PipeTransform {
     protected prepareQuery(inputQuery: string): string;
     private queryList;
     private query;
-    private destroy();
+    private destroy;
     ngOnDestroy(): void;
 }
 export declare class CssIfMatchMediaDirective {

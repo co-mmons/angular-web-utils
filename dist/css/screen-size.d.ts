@@ -1,15 +1,15 @@
 export declare class ScreenSizeMinWidth {
-    static readonly xs: number;
-    static readonly extraSmall: number;
-    static readonly sm: number;
-    static readonly small: number;
-    static readonly md: number;
-    static readonly tablet: number;
-    static readonly medium: number;
-    static readonly lg: number;
-    static readonly large: number;
-    static readonly desktop: number;
-    static readonly xl: number;
-    static readonly extraLarge: number;
-    static readonly desktopWide: number;
+    static readonly xs = 0;
+    static readonly extraSmall = 0;
+    static readonly sm = 576;
+    static readonly small = 576;
+    static readonly md = 768;
+    static readonly tablet = 768;
+    static readonly medium = 768;
+    static readonly lg = 992;
+    static readonly large = 992;
+    static readonly desktop = 992;
+    static readonly xl = 1200;
+    static readonly extraLarge = 1200;
+    static readonly desktopWide = 1200;
 }
